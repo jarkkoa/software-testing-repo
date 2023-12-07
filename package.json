@@ -2,9 +2,10 @@
   "name": "tests",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "JSCOV=1 mocha -R mocha-lcov-reporter > coverage.lcov"
+    "test": "JSCOV=1 mocha -R mocha-lcov-reporter ./tests > coverage.lcov"
   },
   "author": "Jarkko Ahvenniemi & Juho Lommi",
   "license": "ISC",
