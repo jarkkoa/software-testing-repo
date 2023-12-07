@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "JSCOV=1 mocha",
+    "coverage": "mocha-lcov-reporter > coverage/coverage.lcov"
   },
   "author": "Jarkko Ahvenniemi & Juho Lommi",
   "license": "ISC",
