@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "c8 mocha test/",
+    "test": "c8 mocha tests/",
     "coverage": "c8 report --reporter=text-lcov > lcov.info"
   },
   "author": "Jarkko Ahvenniemi & Juho Lommi",
