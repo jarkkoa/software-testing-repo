@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "c8 mocha tests/",
-    "coverage": "c8 report --reporter=text-lcov > lcov.info"
+    "coverage": "c8 report --reporter=text-lcov > ./coverage/lcov.info"
   },
   "author": "Jarkko Ahvenniemi & Juho Lommi",
   "license": "ISC",
