@@ -12,8 +12,8 @@ describe("Dividing numbers", function () {
     it("Should divide decimals", function () {
       assert.equal(divide(2.2,1.1), 2);
     });
-    it("Should not be able to divide using null", function () {
-      assert.equal(divide(4, 0), NaN);
+    it("Should be infinite when dividing by zero", function () {
+      assert.equal(divide(4, 0), Infinity);
     });
     it("Should not accept undefined values", function () {
       assert.equal(divide(4,undefined), NaN);
