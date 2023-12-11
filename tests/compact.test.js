@@ -12,7 +12,7 @@ describe("Remove Falsey values from list", function () {
     it("Should remove zero values", function () {
         assert.deepEqual(compact([1, 2, 0, 4]), [1, 2, 4]);
     });
-    it("Should multiple zero values", function () {
+    it("Should remove multiple zero values", function () {
         assert.deepEqual(compact([1, 2, 0, -0, 0.0, 4]), [1, 2, 4]);
     });
     it("Should remove NaN", function () {

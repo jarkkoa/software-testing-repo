@@ -11,11 +11,8 @@ describe("Get values from list", function () {
     it("Should get value by string path", function () {
         assert.equal(get(testObject, "a.0.b.c"), 4);
     });
-    it("Should get value by string path", function () {
+    it("Should get value by string path 2", function () {
         assert.equal(get(testObject, "a[0].b.c", "default"), 4);
-    });
-    it("Should get value by list path", function () {
-        assert.equal(get(testObject, ['a', '0', 'b', 'c']), 4);
     });
     it("Should get value by list path", function () {
         assert.equal(get(testObject, ['a', '0', 'b', 'c']), 4);
@@ -23,7 +20,7 @@ describe("Get values from list", function () {
     it("Should use default value if not found", function () {
         assert.equal(get(testObject, "1.2.3", "default"), "default");
     });
-    it("Should use default value if get undefined", function () {
+    it("Should use default value if searching undefined", function () {
         assert.equal(get(testObject, undefined, "default"), "default");
     });
   });

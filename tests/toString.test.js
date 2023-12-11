@@ -12,7 +12,7 @@ describe("Converts numbers to string", function () {
       it("Should convert decimal to string", function () {
         assert.equal(toString(2.2), "2.2");
       });
-      it("Should convert empty string to null", function () {
+      it("Should convert empty string to empty string", function () {
         assert.equal(toString(""), "");
       });
       it("Should convert list to string", function () {
